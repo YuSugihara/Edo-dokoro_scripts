@@ -1,5 +1,5 @@
 
-# STEP 1 : remove the column of dq_mie (D. quinqueloba)  (bcftools view -s ^dq_mie)
+# STEP 1 : Remove the column of dq_mie (D. quinqueloba)  (bcftools view -s ^dq_mie)
 # STEP 2 : Retain biallelic SNPs                         (bcftools view -m 2 -M 2 -v snp)
 # STEP 3 : Remove the positions with missing             (bcftools view -i 'F_MISSING=0')
 # 
