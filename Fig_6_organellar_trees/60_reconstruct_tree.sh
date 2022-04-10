@@ -1,6 +1,19 @@
 
 # Get genotype table for chloroplast
-# Output file 'genotype_table_CP.txt' is in '61_genotype_tables'.
+# Output file 'genotype_table_CP.txt' is in '61_genotype_tables'
+# Each column of 'genotype_table_CP.txt' indicates:
+# 1.  Contig name (chloroplast)
+# 2.  Position
+# 3.  REF (nucleotide of reference genome)
+# 4.  ALT (nucleotide of mutation)
+# 5.  Genotype of dt_kita1   (D. tokoro)
+# 6.  Genotype of dt_waka1   (D. tokoro)
+# 7.  Genotype of dt_mzawa   (D. tokoro)
+# 8.  Genotype of ed_hachi1  (Edo-dokoro)
+# 9.  Genotype of tn_yuga    (D. tenuipes)
+# 10. Genotype of tn_utsu    (D. tenuipes)
+# 11. Genotype of tn_mie1    (D. tenuipes)
+# 12. Genotype of dq_mie     (D. quinqueloba)
 
 bcftools view -m 2 \
               -M 2 \
@@ -11,8 +24,22 @@ grep -v '0/1' | \
 grep 'CP' > genotype_table_CP.txt
 
 
+
 # Get genotype table for mitochondria
-# Output file 'genotype_table_MT.txt' is in '61_genotype_tables'.
+# Output file 'genotype_table_MT.txt' is in '61_genotype_tables'
+# Each column of 'genotype_table_MT.txt' indicates:
+# 1.  Contig name (mitochondria)
+# 2.  Position
+# 3.  REF (nucleotide of reference genome)
+# 4.  ALT (nucleotide of mutation)
+# 5.  Genotype of dt_kita1   (D. tokoro)
+# 6.  Genotype of dt_waka1   (D. tokoro)
+# 7.  Genotype of dt_mzawa   (D. tokoro)
+# 8.  Genotype of ed_hachi1  (Edo-dokoro)
+# 9.  Genotype of tn_yuga    (D. tenuipes)
+# 10. Genotype of tn_utsu    (D. tenuipes)
+# 11. Genotype of tn_mie1    (D. tenuipes)
+# 12. Genotype of dq_mie     (D. quinqueloba)
 
 bcftools view -m 2 \
               -M 2 \
