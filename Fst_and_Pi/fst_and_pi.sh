@@ -36,7 +36,7 @@ vcf2gt vcf_pp_kita_waka_mzawa_edo_yuga_utsu_mie_quinq.no_dq_mie.m2M2vsnps.vcf.gz
 
 
 
-# Calculate Fst and Pi
+# Calculate Fst and pi
 # Fst was calculated between D. tokoro and D. tenuipes
 # Pi was calculated in each population of D. tokoro and D. tenuipes
 #
@@ -44,11 +44,11 @@ vcf2gt vcf_pp_kita_waka_mzawa_edo_yuga_utsu_mie_quinq.no_dq_mie.m2M2vsnps.vcf.gz
 # 1 : Chromosome name
 # 2 : Fst
 # 3 : No. SNPs for Fst
-# 4 : Pi in D. tokoro
-# 5 : Pi in D. tenuipes
-# 6 : pi in D. tokoro and D. tenuipes
-# 7 : No. SNPs for Pi in D. tokoro
-# 8 : No. SNPs for Pi in D. tenuipes
+# 4 : Pi in D. tokoro                  (before normalized by mapped sites)
+# 5 : Pi in D. tenuipes                (before normalized by mapped sites)
+# 6 : pi in D. tokoro and D. tenuipes  (before normalized by mapped sites)
+# 7 : No. SNPs for pi in D. tokoro
+# 8 : No. SNPs for pi in D. tenuipes
 # 9 : No. SNPs for pi in D. tokoro and D. tenuipes
 
 calculate_fst_pi.py vcf_pp_kita_waka_mzawa_edo_yuga_utsu_mie_quinq.no_dq_mie.m2M2vsnps.vcf.gz.gt \
